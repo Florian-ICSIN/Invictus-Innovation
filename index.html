@@ -9,23 +9,23 @@
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
       color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       padding: 40px 20px;
+      padding-top: 200px; /* Platz für das Logo oben links */
       position: relative;
+      text-align: center;
     }
 
     .logo {
       position: absolute;
       top: 20px;
       left: 20px;
-      max-width: 400px; /* etwa doppelte Größe */
+      width: 400px;
+      max-width: 90vw;
+      height: auto;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-top: 100px;
       margin-bottom: 10px;
     }
 
@@ -38,13 +38,39 @@
 
     p {
       max-width: 800px;
-      text-align: center;
+      margin: 0 auto;
       font-size: 1.1rem;
       line-height: 1.6;
+      padding: 0 10px;
     }
 
     strong {
       color: #000;
+    }
+
+    /* ✅ Responsive Anpassung für Smartphones */
+    @media (max-width: 600px) {
+      .logo {
+        width: 180px;
+        top: 10px;
+        left: 10px;
+      }
+
+      body {
+        padding-top: 160px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
