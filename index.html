@@ -1,89 +1,132 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Invictus Innovation</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #111;
-      padding: 40px 20px;
-      padding-top: 240px; /* Platz nach oben für das Logo */
-      position: relative;
-      text-align: center;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: row;
     }
 
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 400px;
-      max-width: 90vw;
+    /* Seitenmenü */
+    .sidebar {
+      width: 220px;
+      background-color: #d4f4d2; /* Pastellgrün */
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    .sidebar img.logo {
+      width: 100%;
+      max-width: 160px;
       height: auto;
+      margin-bottom: 30px;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 15px 0;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu img.icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    /* Hauptinhalt */
+    .main {
+      margin-left: 240px;
+      padding: 40px;
+      box-sizing: border-box;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 32px;
       margin-bottom: 10px;
     }
 
-    h2 {
-      font-weight: normal;
-      font-size: 1.3rem;
+    .slogan {
+      font-size: 20px;
+      font-style: italic;
       margin-bottom: 30px;
-      color: #666;
+      color: #333;
     }
 
-    p {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.1rem;
+    .beschreibung {
+      font-size: 16px;
       line-height: 1.6;
-      padding: 0 10px;
+      color: #444;
     }
 
-    strong {
-      color: #000;
-    }
-
-    /* 📱 Responsive für Smartphones */
-    @media (max-width: 600px) {
-      .logo {
-        width: 180px;
-        top: 10px;
-        left: 10px;
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
       }
 
-      body {
-        padding-top: 180px;
+      .main {
+        margin-left: 0;
+        padding: 20px;
       }
 
-      h1 {
-        font-size: 1.8rem;
+      .sidebar img.logo {
+        display: block;
+        margin: 0 auto 20px auto;
       }
 
-      h2 {
-        font-size: 1.1rem;
+      .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
-      p {
-        font-size: 1rem;
+      .menu li {
+        justify-content: center;
       }
     }
   </style>
 </head>
 <body>
 
-  <img src="Invictus_Innovation_Logo.PNG" alt="Invictus Innovation Logo" class="logo">
+  <!-- Seitenmenü -->
+  <div class="sidebar">
+    <img src="images/Invictus_Innovation_Logo.PNG" alt="Logo" class="logo" />
 
-  <h1>INVICTUS INNOVATION</h1>
-  <h2>Perfektionismus ist unser Mindestmaß</h2>
+    <ul class="menu">
+      <li><img src="images/Piktogramm_Lautsprecher.png" class="icon" alt="">Audio</li>
+      <li><img src="images/Piktogramm_Generator.png" class="icon" alt="">MAG-GEN 1</li>
+      <li><img src="images/Piktogramm_Unternehmen.png" class="icon" alt="">Das Unternehmen</li>
+      <li><img src="images/Piktogramm_Die Gründer.png" class="icon" alt="">Die Gründer</li>
+      <li><img src="images/Piktogramm_Kontakt.png" class="icon" alt="">Kontakt</li>
+    </ul>
+  </div>
 
-  <p>
-    Invictus Innovation ist ein junges Unternehmen aus dem südlichen Thüringen – beheimatet in Bad Lobenstein.
+  <!-- Hauptbereich -->
+  <div class="main">
+    <h1>Willkommen bei Invictus Innovation</h1>
+    <p class="slogan">Perfektionismus reicht uns nicht aus.</p>
+
+   <div class="beschreibung">
+  <p>Invictus Innovation ist ein junges Unternehmen aus dem südlichen Thüringen – beheimatet in Bad Lobenstein.
     Gegründet von drei engagierten Technikern mit einer gemeinsamen Vision: Technik kompromisslos weiterzudenken.
     <br><br>
     Unser Kerngeschäft liegt in der Entwicklung hochwertiger Audiotechnik. Wir gestalten leistungsfähige PA-Systeme –
@@ -100,6 +143,9 @@
     Invictus Innovation steht für visionäres Engineering, präzise Umsetzung und den Anspruch, nicht nur mitzuhalten,
     sondern vorauszugehen.
   </p>
+</div>
+
+  </div>
 
 </body>
 </html>
