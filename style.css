@@ -90,6 +90,19 @@ body {
   text-align: justify;
 }
 
+.titelbox {
+  background-color: #b8fbc1;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+
 @media screen and (max-width: 768px) {
   .logo {
     width: 200px;
