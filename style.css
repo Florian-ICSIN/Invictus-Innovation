@@ -1,8 +1,8 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
+      background-color: #fff;
+      color: #111;
     }
 
     .logo {
@@ -13,14 +13,12 @@
     }
 
     .menu {
-      position: absolute;
-      top: 240px;
-      left: 20px;
+      margin: 40px 0 30px 20px;
       display: flex;
       flex-direction: column;
       gap: 25px;
-      padding-bottom: 30px; /* Abstand unter Menü */
     }
+
 
     .menu a {
       display: flex;
@@ -42,19 +40,11 @@
     }
 
     .titel {
-      margin-left: 260px;
-      padding-top: 40px;
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5em;
-      font-weight: 700;
+     margin: 40px 20px 0 20px;
     }
 
     .slogan {
-      margin-left: 260px;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5em;
-      font-style: italic;
-      margin-top: 5px;
+      margin: 10px 20px;
     }
 
     .beschreibung {
