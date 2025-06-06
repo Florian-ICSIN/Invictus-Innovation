@@ -74,13 +74,13 @@ body.subpage .logo {
 
 .titel {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .slogan {
-  font-size: 1rem;
+  font-size: 2rem;
   font-style: italic;
   color: #555;
 }
