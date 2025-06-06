@@ -1,83 +1,101 @@
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #111;
-    }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+}
 
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 200px;
-    }
+.logo {
+  display: block;
+  width: 200px;
+  margin: 20px auto 10px auto;
+}
 
-    .menu {
-      margin: 40px 0 30px 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-    }
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #b8fbc1;
+  border-radius: 20px;
+}
 
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  transition: background-color 0.3s ease;
+}
 
-    .menu a {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      background-color: #b8fbc1;
-      padding: 10px 15px;
-      border-radius: 8px;
-      font-size: 1.2em;
-      line-height: 1.5em;
-    }
+.menu a:hover {
+  background-color: #e0ffe8;
+}
 
-    .menu img {
-      width: 40px;
-      height: 40px;
-      margin-right: 12px;
-    }
+.menu img {
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+}
 
-    .titel {
-     margin: 40px 20px 0 20px;
-    }
+.titel {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-top: 40px;
+}
 
-    .slogan {
-      margin: 10px 20px;
-    }
+.slogan {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  font-style: italic;
+  margin-top: 10px;
+}
 
-    .beschreibung {
-      margin: 30px auto 0 auto;
-      max-width: 800px;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1em;
-      line-height: 1.7em;
-      text-align: justify;
-      }
+.beschreibung {
+  margin: 30px auto 0 auto;
+  max-width: 800px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  text-align: justify;
+}
 
-    @media screen and (max-width: 768px) {
-      .logo {
-        width: 120px;
-      }
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
 
-      .menu {
-        margin-top: 20px;
-        position: static;
-        align-items: center;
-      }
+  .menu {
+    width: 90%;
+    align-items: center;
+  }
 
-      .menu a {
-        font-size: 1em;
-        padding: 8px 12px;
-      }
+  .menu a {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
 
-      .menu img {
-        width: 30px;
-        height: 30px;
-      }
+  .menu img {
+    width: 30px;
+    height: 30px;
+  }
 
-      .titel, .slogan {
-        text-align: center;
-      }
-    }
+  .titel {
+    font-size: 2.5em;
+  }
+
+  .slogan {
+    font-size: 1.2em;
+  }
+}
