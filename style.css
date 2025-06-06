@@ -5,23 +5,36 @@ body {
   color: #111;
 }
 
+/* Container für das gesamte Layout unter dem Logo */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo zentriert oben */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
   width: 400px;
 }
 
+/* Menü links */
 .menu {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: fit-content;
-  margin-top: 40px;
-  margin-left: 0;
   padding: 20px;
   background-color: #b8fbc1;
   border-radius: 20px;
+  width: fit-content;
 }
 
 .menu a {
@@ -48,12 +61,17 @@ body {
   margin-right: 12px;
 }
 
+/* Rechter Inhaltsbereich */
+.content {
+  flex: 1;
+}
+
 .titel {
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 3.5em;
   font-weight: 700;
-  margin-top: 40px;
+  margin-top: 0;
 }
 
 .slogan {
@@ -65,8 +83,7 @@ body {
 }
 
 .beschreibung {
-  margin: 30px auto 0 auto;
-  max-width: 800px;
+  margin-top: 30px;
   font-family: 'Playfair Display', serif;
   font-size: 1.1em;
   line-height: 1.7em;
@@ -75,7 +92,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .logo {
-    width: 120px;
+    width: 200px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .menu {
@@ -83,14 +105,14 @@ body {
     align-items: center;
   }
 
+  .menu img {
+    width: 40px;
+    height: 40px;
+  }
+
   .menu a {
     font-size: 1em;
     padding: 8px 12px;
-  }
-
-  .menu img {
-    width: 30px;
-    height: 30px;
   }
 
   .titel {
