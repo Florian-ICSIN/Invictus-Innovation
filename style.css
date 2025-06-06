@@ -131,6 +131,35 @@ body.subpage .titelbox {
   border: 2px solid #4caf50;
 }
 
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #b8fbc1;
+  padding: 20px 40px;
+  border-radius: 20px;
+  margin: 40px auto 30px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+body.subpage .logo {
+  width: 300px;
+  margin: 0;
+}
+
+body.subpage .titelbox {
+  margin: 0;
+  background: none;
+  padding: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .logo {
