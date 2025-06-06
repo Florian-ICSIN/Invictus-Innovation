@@ -26,6 +26,11 @@ body {
   width: 400px;
 }
 
+body.subpage .logo {
+  width: 300px;
+}
+
+
 /* Menü links */
 .menu {
   display: flex;
