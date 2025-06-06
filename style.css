@@ -107,6 +107,26 @@ body.subpage .logo {
   max-width: 800px;
 }
 
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+body.subpage .titelbox {
+  margin: 0;
+  font-size: 2.5em;
+  background-color: #b8fbc1;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+
 
 @media screen and (max-width: 768px) {
   .logo {
