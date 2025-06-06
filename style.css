@@ -24,6 +24,7 @@ body {
 
 .logo {
   width: 400px;
+  height: auto;
 }
 
 body.subpage .logo {
@@ -72,19 +73,16 @@ body.subpage .logo {
 }
 
 .titel {
-  text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 3.5em;
+  font-size: 2rem;
   font-weight: 700;
-  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .slogan {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 2.0em;
+  font-size: 1rem;
   font-style: italic;
-  margin-top: 10px;
+  color: #555;
 }
 
 .beschreibung {
@@ -141,6 +139,22 @@ body.subpage .titelbox {
 
 .header-box .logo {
   width: 300px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
