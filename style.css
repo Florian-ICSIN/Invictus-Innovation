@@ -97,14 +97,14 @@ body.subpage .logo {
 
 .titelbox {
   background-color: #b8fbc1;
-  padding: 40px 20px;
   text-align: center;
   font-family: 'Playfair Display', serif;
   font-size: 2.5em;
   font-weight: 700;
   border-radius: 20px;
-  margin: 40px auto;
   max-width: 800px;
+  margin: 40px auto;
+  padding: 40px 20px;
 }
 
 .header-row {
@@ -116,14 +116,9 @@ body.subpage .logo {
 }
 
 body.subpage .titelbox {
-  margin: 0;
-  font-size: 2.5em;
-  background-color: #b8fbc1;
   padding: 15px 30px;
+  margin: 0;
   border-radius: 15px;
-  font-weight: bold;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
 }
 
 .menu a.active {
