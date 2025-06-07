@@ -259,4 +259,8 @@ body.subpage .titelbox {
     border: none;
     cursor: pointer;
   }
+  
+.menu-toggle {
+    display: block;
+  }
 }
