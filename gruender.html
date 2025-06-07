@@ -9,28 +9,22 @@
 <body class="subpage">
 
   <div class="header-box">
-    <!-- Menü-Icon nur für Mobile -->
-    <img src="images/menu-icon.png" alt="Menü öffnen" class="menu-toggle" id="menuToggle" />
-    
     <img src="images/Invictus_Innovation_Logo.PNG" alt="Invictus Innovation Logo" class="logo" />
     <div class="titelbox">Die Gründer</div>
   </div>
 
-  <!-- Seitenmenü -->
-  <nav class="menu sidenav" id="sidenav">
-    <button class="closebtn" id="closeBtn">&times;</button>
-    <a href="index.html">Zur Startseite</a>
-    <a href="audio.html"><img src="images/Piktogramm_Lautsprecher.png" alt="Audio">Audio</a>
-    <a href="mag-gen.html"><img src="images/Piktogramm_Generator.png" alt="MAG-GEN">MAG-GEN 1</a>
-    <a href="unternehmen.html"><img src="images/Piktogramm_Unternehmen.png" alt="Unternehmen">Das Unternehmen</a>
-    <a href="gruender.html" class="active"><img src="images/Piktogramm_Die Gründer.png" alt="Gründer">Die Gründer</a>
-    <a href="kontakt.html"><img src="images/Piktogramm_Kontakt.png" alt="Kontakt">Kontakt</a>
-  </nav>
+  <div class="main-container">
+    <nav class="menu">
+      <a href="index.html">Zur Startseite</a>
+      <a href="audio.html"><img src="images/Piktogramm_Lautsprecher.png" alt="Audio">Audio</a>
+      <a href="mag-gen.html"><img src="images/Piktogramm_Generator.png" alt="MAG-GEN">MAG-GEN 1</a>
+      <a href="unternehmen.html"><img src="images/Piktogramm_Unternehmen.png" alt="Unternehmen">Das Unternehmen</a>
+      <a href="gruender.html" class="active"><img src="images/Piktogramm_Die Gründer.png" alt="Gründer">Die Gründer</a>
+      <a href="kontakt.html"><img src="images/Piktogramm_Kontakt.png" alt="Kontakt">Kontakt</a>
+    </nav>
 
-  <!-- Inhaltsbereich -->
-  <div class="main-container" id="mainContent">
     <div class="content">
-           <div class="beschreibung">
+      <div class="beschreibung">
         <p><strong>Die Gründer von Invictus Innovation</strong></p>
 
         <p>Hinter Invictus Innovation stehen drei junge Männer aus Thüringen, die mehr verbindet als Technikbegeisterung: Andy (Jahrgang 2001), Florian (2001) und Fabian (2000) sind nicht nur Geschäftspartner – sie sind langjährige Freunde, Bastler mit Herzblut und echte Visionäre. Kennengelernt haben sie sich in ihrer Schulzeit und sind seitdem ein eingespieltes Team.</p>
@@ -54,35 +48,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const sidenav = document.getElementById("sidenav");
-    const closeBtn = document.getElementById("closeBtn");
-    const mainContent = document.getElementById("mainContent");
-
-    menuToggle.addEventListener("click", () => {
-      sidenav.classList.add("open");
-    });
-
-    closeBtn.addEventListener("click", () => {
-      sidenav.classList.remove("open");
-    });
-
-    // Schließen bei Klick außerhalb
-    window.addEventListener("click", (e) => {
-      if (!sidenav.contains(e.target) && !menuToggle.contains(e.target)) {
-        sidenav.classList.remove("open");
-      }
-    });
-
-    // Automatisch schließen bei Linkklick
-    document.querySelectorAll(".sidenav a").forEach(link => {
-      link.addEventListener("click", () => {
-        sidenav.classList.remove("open");
-      });
-    });
-  </script>
 
 </body>
 </html>
