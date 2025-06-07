@@ -31,7 +31,6 @@ body.subpage .logo {
   width: 300px;
 }
 
-
 /* Menü links */
 .menu {
   display: flex;
@@ -157,6 +156,19 @@ body.subpage .titelbox {
   align-items: center;
 }
 
+/* -----------------------------------------
+   Mobile Slide-In-Menü & Animation
+----------------------------------------- */
+.menu-toggle {
+  display: none;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
 
 @media screen and (max-width: 768px) {
   .logo {
@@ -190,16 +202,61 @@ body.subpage .titelbox {
   .slogan {
     font-size: 1.2em;
   }
-  
+
   .beschreibung img {
     display: block;
     margin: 30px auto 0 auto;
     max-width: 100%;
     border-radius: 15px;
   }
-  
+
   .beschreibung p {
     line-height: 1.6;
     margin-bottom: 1.2em;
-  }  
+  }
+
+  /* Slide-In Menü */
+  .menu {
+    display: none;
+  }
+
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px;
+  }
+
+  .sidenav.open {
+    left: 0;
+  }
+
+  .sidenav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    background-color: #444;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 }
